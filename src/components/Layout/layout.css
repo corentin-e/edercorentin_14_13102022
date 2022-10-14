@@ -1,9 +1,40 @@
-.layout-children {
+.layout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    width: 50%;
+}
+
+.layout-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.layout-website_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.layout-logo {
+    border-radius: 100%;
+    width:80px;
+}
+
+.layout-logo_title {
+    font-size: 20px;
+    color: #5A6F08;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.layout-navbar {
+    padding: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

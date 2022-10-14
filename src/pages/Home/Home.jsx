@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom"
 import { Form } from '../../components';
 import './home.css';
 
@@ -17,9 +16,11 @@ const Home = () => {
 
     return (
         <div>
-            <Link to="employees"> Employees </Link>
+            {/* Exemple */}
             Home page
             <button onClick={add}> +</button>
+            {/* Code */}
+            <Form/>
         </div>
     );
 }

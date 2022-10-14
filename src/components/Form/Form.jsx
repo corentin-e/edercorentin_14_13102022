@@ -6,7 +6,6 @@ const Form = () => {
     const { register, handleSubmit } = useForm();
     return (
         <div>
-            Form components
             <NameSet/>
             <JobSet/>
             <AddressSet/>
