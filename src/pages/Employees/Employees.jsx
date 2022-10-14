@@ -1,9 +1,12 @@
 import './employees.css';
+import useEmployee from "../../hooks/useEmployee";
 
 const Employees = () => {
+    const { data } = useEmployee()
+
     return (
         <div>
-            Employees page
+            Employees number {data}
         </div>
     );
 }

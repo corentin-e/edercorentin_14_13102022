@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.child {
+
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.red {
+  background-color: darkred;
+}
+
+
+.dark {
+  background-color: black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
