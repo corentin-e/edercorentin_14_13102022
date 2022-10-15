@@ -15,7 +15,7 @@ const Home = () => {
     console.log(data)
 
     return (
-        <div>
+        <div className='home'>
             {/* Exemple */}
             Home page
             <button onClick={add}> +</button>

@@ -1,14 +1,33 @@
 import './form.css';
-import { useForm } from "react-hook-form";
-import { NameSet, JobSet, AddressSet } from '../index';
+import { useForm, FormProvider } from "react-hook-form";
+import { NameSet, JobSet, AddressSet, Popup } from '../index';
+/* import useEmployee from "../../hooks/useEmployee"; */
+import { useState } from "react";
 
 const Form = () => {
-    const { register, handleSubmit } = useForm();
+    const methods = useForm();
+    const [buttonPopup, setButtonPopup] = useState(false);
+    /* const { addEmployee } = useEmployee(); */
+    const onSubmit = (values) => {
+        /* addEmployee(values); */
+        setButtonPopup(true);
+      };
+
     return (
-        <div>
-            <NameSet/>
-            <JobSet/>
-            <AddressSet/>
+        <div className='form-card'>
+            <FormProvider {...methods}>
+                <form className='form' onSubmit={methods.handleSubmit(onSubmit)}>
+                    <label className='form-title'>Create new employe</label>
+                    <NameSet/>
+                    <JobSet/>
+                    <AddressSet/>
+                    <div className='form-buttons'>
+                        <button id={buttonPopup} type='submit' className='form-button'>Save</button>
+                        <button type='button' className='form-button'>Cancel</button>
+                    </div>
+                </form>
+            </FormProvider>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}/>
         </div>
     );
 }
