@@ -1,22 +1,25 @@
+
 .jobset_job {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.jobset_job-title {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.jobset_job-inputs {
     display: flex;
     flex-direction: column;
     padding: 10px;
     border:  2px solid #6C840A;
-    margin-top: 30px;
-}
-
-.jobset_job-title {
-    position: absolute;
-    top: 46.2%;
-    padding: 10px;
-    background-color: white;
-    font-size: 20px;
+    margin-top: 20px;
 }
 
 .jobset_job-input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    padding: 5px;
 }
