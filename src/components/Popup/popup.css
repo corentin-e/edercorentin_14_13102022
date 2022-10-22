@@ -1,5 +1,26 @@
 .popup {
-    position: absolute;
-    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #93AD18;
+    color: white;
+    border-radius: 5px;
     padding: 10px;
+    width: 500px;
+}
+
+.popup-button {
+    margin-top: 10px;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.popup-button:hover {
+    background-color: #5171A5;
+    color: white;
 }

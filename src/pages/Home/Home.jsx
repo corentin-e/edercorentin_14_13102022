@@ -17,8 +17,8 @@ const Home = () => {
     return (
         <div className='home'>
             {/* Exemple */}
-            Home page
-            <button onClick={add}> +</button>
+            {/* Home page
+            <button onClick={add}> +</button> */}
             {/* Code */}
             <Form/>
         </div>

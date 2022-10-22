@@ -11,7 +11,7 @@ const Form = () => {
     const onSubmit = (values) => {
         /* addEmployee(values); */
         setButtonPopup(true);
-      };
+    };
 
     return (
         <div className='form-card'>
@@ -22,7 +22,7 @@ const Form = () => {
                     <JobSet/>
                     <AddressSet/>
                     <div className='form-buttons'>
-                        <button id={buttonPopup} type='submit' className='form-button'>Save</button>
+                        <button type='submit' className='form-button'>Save</button>
                         <button type='button' className='form-button'>Cancel</button>
                     </div>
                 </form>

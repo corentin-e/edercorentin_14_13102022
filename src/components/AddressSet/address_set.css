@@ -1,0 +1,22 @@
+.addressset_address {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border:  2px solid #6C840A;
+    margin-top: 30px;
+}
+
+.addressset_address-title {
+    position: absolute;
+    top: 58.5%;
+    padding: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.addressset_address-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
