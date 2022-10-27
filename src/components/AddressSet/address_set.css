@@ -5,6 +5,7 @@
 .addressset_address-title {
     padding: 10px;
     font-size: 20px;
+    color: #6C840A;
 }
 
 .addressset_address-inputs {
@@ -12,6 +13,7 @@
     flex-direction: column;
     padding: 10px;
     border:  2px solid #6C840A;
+    border-radius: 5px;
     margin-top: 20px;
 }
 

@@ -8,7 +8,7 @@ const Layout = ({children}) => {
             <div className='layout-topbar'>
                 <div className='layout-website_name'>
                     <img src={Logo} alt="logo" className='layout-logo'/>
-                    <span className='layout-logo_title'>HRnet</span>
+                    <span className='layout-logo_title'>WEALTH HEALTH</span>
                 </div>
                 <div className='layout-navbar'>
                     <Link to="/"> Homes </Link>
