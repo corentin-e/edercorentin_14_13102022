@@ -1,6 +1,8 @@
 import './layout.css';
 import Logo from '../../assets/Logo.jpg';
 import {Link} from "react-router-dom"
+import HomeIcon from '../../assets/home-icon.png'
+import ListIcon from '../../assets/list-icon.png'
 
 const Layout = ({children}) => {
     return (
@@ -11,8 +13,22 @@ const Layout = ({children}) => {
                     <span className='layout-logo_title'>WEALTH HEALTH</span>
                 </div>
                 <div className='layout-navbar'>
-                    <Link to="/"> Homes </Link>
-                    <Link to="employees"> Employees List </Link>
+                    <Link to="/" className='layout-link'>
+                        <div className='layout-ongle'>
+                            <img src={HomeIcon} alt="home icon" className='layout-icon'/>
+                            <div className='layout-ongle_tag tag-small'>
+                                <label for="" className='layout-ongle_tag-name'> Homes </label>
+                            </div>
+                        </div> 
+                    </Link>
+                    <Link to="employees" className='layout-link'>
+                        <div className='layout-ongle'>
+                            <img src={ListIcon} alt="home icon" className='layout-icon'/>
+                            <div className='layout-ongle_tag tag-large'>
+                                <label for="" className='layout-ongle_tag-name'> Employees List  </label>
+                            </div>
+                        </div> 
+                    </Link>
                 </div>
             </div>
             {children}

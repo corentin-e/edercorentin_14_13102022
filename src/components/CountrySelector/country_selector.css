@@ -1,0 +1,12 @@
+.countryselector_address-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.countryselector_address-input-select {
+    text-overflow: ellipsis;
+    width: 177px;
+    text-align: center;
+}

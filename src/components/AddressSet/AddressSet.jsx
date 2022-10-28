@@ -1,6 +1,6 @@
 import './address_set.css';
-import countries from './countries.json'
 import { useFormContext } from "react-hook-form";
+import { CountrySelector } from '../../components';
 
 const AddressSet = () => {
     const {
@@ -19,15 +19,7 @@ const AddressSet = () => {
                     <label>City</label>
                     <input type="text" name="city" id="city" {...register("city")}/>
                 </div>
-                <div className='addressset_address-input'>
-                    <label>Country</label>
-                    <select type="text" name="department" id="department" className='addressset_address-input-select' {...register("country")}>
-                        <option value="">- Select Country -</option>
-                        {countries.map((item) => {
-                        return <option key={item.country}>{item.country}</option>;
-                        })}
-                    </select>
-                </div>
+                <CountrySelector/>
                 <div className='addressset_address-input'>
                     <label>Zip Code</label>
                     <input type="number" name="zip code" id="zip_code" {...register("zipCode")}/>

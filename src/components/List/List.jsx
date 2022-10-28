@@ -80,11 +80,15 @@ const List = () => {
       ];
 
       const { data } = useEmployee();
+
+      const options = {
+        downloadOptions: {
+          filename:'employeesList.csv',
+        },
+      };
     
     return (
-        <div>
-            <MUIDataTable title="Employees List" columns={columns} data={data} />
-        </div>
+      <MUIDataTable title="Employees List" columns={columns} data={data} options={options} />
     );
 }
 

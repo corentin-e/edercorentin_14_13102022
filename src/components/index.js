@@ -5,5 +5,6 @@ export {default as JobSet} from './JobSet/JobSet';
 export {default as AddressSet} from './AddressSet/AddressSet';
 export {default as Popup} from './Popup/Popup';
 export {default as List} from './List/List';
+export {default as CountrySelector} from './CountrySelector/CountrySelector';
 
 
