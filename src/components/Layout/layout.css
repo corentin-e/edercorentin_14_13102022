@@ -65,7 +65,6 @@
     text-align: end;
     padding: 5px;
     padding-right: 0px;
-    margin-left: 10px;
     border-radius: 50px;
     background-color: #93AD18;
     transition-duration: 0.8s;
@@ -73,23 +72,34 @@
 }
 
 .layout-ongle_tag-name {
-    width: 0px;
     transition-duration: 1s;
     width: 150px;
     white-space: nowrap;
 }
 
+.tag-small {
+    width:24px;
+}
+
+.tag-large {
+    width:24px;
+}
+
 .layout-ongle:hover .tag-small {
-    width: 80px;
+    width: 90px;
     padding-right: 20px;
 }
 
 .layout-ongle:hover .tag-large {
-    width: 135px;
+    width: 145px;
     padding-right: 20px;
 }
 
 @media screen and (max-width: 750px) {
+    .layout-navbar {
+        width: 250px;
+    }
+
     .layout-website_name {
         flex-direction: column;
     }
