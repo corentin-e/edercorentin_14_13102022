@@ -1,5 +1,6 @@
 import './list.css';
 import MUIDataTable from 'mui-datatables';
+import useEmployee from "../../hooks/useEmployee";
 
 const List = () => {
 
@@ -21,6 +22,14 @@ const List = () => {
           },
         },
         {
+          name: "birthDate",
+          label: "Date of Birth",
+          options: {
+            filter: true,
+            sort: true,
+          },
+        },
+        {
           name: "startDate",
           label: "Start Date",
           options: {
@@ -31,14 +40,6 @@ const List = () => {
         {
           name: "department",
           label: "Departement",
-          options: {
-            filter: true,
-            sort: true,
-          },
-        },
-        {
-          name: "birthday",
-          label: "Date of Birth",
           options: {
             filter: true,
             sort: true,
@@ -62,7 +63,7 @@ const List = () => {
         },
         {
           name: "country",
-          label: "State",
+          label: "Country",
           options: {
             filter: true,
             sort: true,
@@ -77,10 +78,12 @@ const List = () => {
           },
         },
       ];
+
+      const { data } = useEmployee();
     
     return (
         <div>
-            <MUIDataTable title="Employees List" columns={columns} />
+            <MUIDataTable title="Employees List" columns={columns} data={data} />
         </div>
     );
 }

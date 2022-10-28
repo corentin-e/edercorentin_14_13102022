@@ -1,15 +1,20 @@
 import './form.css';
 import { useForm, FormProvider } from "react-hook-form";
 import { NameSet, JobSet, AddressSet, Popup } from '../index';
-/* import useEmployee from "../../hooks/useEmployee"; */
+import useEmployee from "../../hooks/useEmployee";
 import { useState } from "react";
 
 const Form = () => {
-    const methods = useForm();
+    const methods = useForm({
+        defaultValues: {
+            first_name: "",
+            last_name: "",
+        },
+    });
     const [buttonPopup, setButtonPopup] = useState(false);
-    /* const { addEmployee } = useEmployee(); */
+    const { addEmployee } = useEmployee();
     const onSubmit = (values) => {
-        /* addEmployee(values); */
+        addEmployee(values);
         setButtonPopup(true);
     };
 

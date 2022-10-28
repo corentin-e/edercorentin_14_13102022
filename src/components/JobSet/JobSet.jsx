@@ -1,17 +1,22 @@
 import './job_set.css';
+import { useFormContext } from "react-hook-form";
 
 const JobSet = () => {
+    const {
+        register,
+    } = useFormContext();
+
     return (
         <div className='jobset_job'>
             <span className='jobset_job-title'>Employee job</span>
             <div className='jobset_job-inputs'>
                 <div className='jobset_job-input'>
                     <label>Date of begining</label>
-                    <input type="date" name="start date" id="start_date"/>
+                    <input type="date" name="start date" id="start_date" {...register("startDate")}/>
                 </div>
                 <div className='jobset_job-input'>
                     <label>Department</label>
-                    <select type="text" name="department" id="department">
+                    <select type="text" name="department" id="department" {...register("department")}>
                         <option value="">- Select Department -</option>
                         <option value="Sales">Sales</option>
                         <option value="Marketing">Marketing</option>
