@@ -10,3 +10,11 @@
     width: 177px;
     text-align: center;
 }
+
+.countryselector_error-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: rgb(155, 13, 13);
+    font-size: 11px;
+}
