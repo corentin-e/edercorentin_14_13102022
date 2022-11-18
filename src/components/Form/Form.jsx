@@ -1,8 +1,9 @@
 import './form.css';
 import { useForm, FormProvider } from "react-hook-form";
-import { NameSet, JobSet, AddressSet, Popup } from '../index';
+import { NameSet, JobSet, AddressSet } from '../index';
 import useEmployee from "../../hooks/useEmployee";
 import { useState } from "react";
+import { Popup } from "popup-lib-p14";
 
 const Form = () => {
     const methods = useForm({
