@@ -42,3 +42,21 @@
     background-color: #5171A5;
     color: white;
 }
+
+.popupcontent-message {
+    font-weight: 600;
+}
+
+.popupcontent-button {
+    margin-top: 10px;
+    width: 150px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.popupcontent-button:hover {
+    background-color: #5171A5;
+    color: white;
+}

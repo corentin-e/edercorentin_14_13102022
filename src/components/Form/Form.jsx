@@ -1,9 +1,10 @@
 import './form.css';
 import { useForm, FormProvider } from "react-hook-form";
-import { NameSet, JobSet, AddressSet } from '../index';
+import { NameSet, JobSet, AddressSet, PopupContent } from '../index';
 import useEmployee from "../../hooks/useEmployee";
 import { useState } from "react";
 import { Popup } from "popup-lib-p14";
+import {Link} from "react-router-dom";
 
 const Form = () => {
     const methods = useForm({
@@ -33,7 +34,13 @@ const Form = () => {
                     </div>
                 </form>
             </FormProvider>
-            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}/>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                <span className='popupcontent-message'>Employee Created!</span>
+                <span>You can see the employees list !</span>
+                <Link to="employees">
+                    <button className='popupcontent-button' type="button">Employees List</button>
+                </Link>
+            </Popup>
         </div>
     );
 }
