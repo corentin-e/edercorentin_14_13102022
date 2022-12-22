@@ -9,7 +9,7 @@ const Layout = ({children}) => {
         <div className='layout'>
             <div className='layout-topbar'>
                 <div className='layout-website_name'>
-                    <img src={Logo} alt="logo" className='layout-logo'/>
+                    <img src={Logo} alt="logo" className='layout-logo' width="80" height="80" rel="preload"/>
                     <span className='layout-logo_title'>WEALTH HEALTH</span>
                 </div>
                 <div className='layout-navbar'>
@@ -17,7 +17,7 @@ const Layout = ({children}) => {
                         <div className='layout-ongle'>
                             <img src={HomeIcon} alt="home icon" className='layout-icon'/>
                             <div className='layout-ongle_tag tag-small'>
-                                <label for="" className='layout-ongle_tag-name'> Homes </label>
+                                <label className='layout-ongle_tag-name'> Homes </label>
                             </div>
                         </div> 
                     </Link>
@@ -25,7 +25,7 @@ const Layout = ({children}) => {
                         <div className='layout-ongle'>
                             <img src={ListIcon} alt="home icon" className='layout-icon'/>
                             <div className='layout-ongle_tag tag-large'>
-                                <label for="" className='layout-ongle_tag-name'> Employees List  </label>
+                                <label className='layout-ongle_tag-name'> Employees List  </label>
                             </div>
                         </div> 
                     </Link>

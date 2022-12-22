@@ -5,7 +5,6 @@ import { useFormContext } from "react-hook-form";
 const CountrySelector = () => {
     const {
         register,
-        formState: { errors },
     } = useFormContext();
 
     return (
