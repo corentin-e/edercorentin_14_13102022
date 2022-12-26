@@ -5,7 +5,7 @@ import employeeContext from './createContext'
 const useEmployee = () => {
   const { data, setData } = useContext(employeeContext)
 
-  const addEmployee = (employee) => {
+  const addEmployee = async (employee) => {
     setData([...data, employee]);
   };
 

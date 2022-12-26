@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Employees } from './pages';
-import { Layout } from './components'
+import { Layout } from './components';
 import { Provider } from "./hooks/createContext";
 
 function App() {

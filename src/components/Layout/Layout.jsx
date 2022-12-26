@@ -9,7 +9,7 @@ const Layout = ({children}) => {
         <div className='layout'>
             <div className='layout-topbar'>
                 <div className='layout-website_name'>
-                    <img src={Logo} alt="logo" className='layout-logo' width="80" height="80" rel="preload"/>
+                    <img src={Logo} alt="logo" className='layout-logo' width="40" height="40" rel="preload"/>
                     <span className='layout-logo_title'>WEALTH HEALTH</span>
                 </div>
                 <div className='layout-navbar'>

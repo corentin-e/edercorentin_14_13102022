@@ -1,5 +1,7 @@
 import './address_set.css';
+/* import React from 'react'; */
 import { useFormContext } from "react-hook-form";
+/* const CountrySelector = React.lazy(() => import('../../components/CountrySelector')); */
 import { CountrySelector } from '../../components';
 
 const AddressSet = () => {
@@ -7,6 +9,8 @@ const AddressSet = () => {
         register,
         formState: { errors },
     } = useFormContext();
+
+    
 
     return (
         <div className='addressset_address'>
