@@ -1,8 +1,8 @@
 import './address_set.css';
-/* import React from 'react'; */
+import React from 'react';
 import { useFormContext } from "react-hook-form";
-/* const CountrySelector = React.lazy(() => import('../../components/CountrySelector')); */
-import { CountrySelector } from '../../components';
+
+const CountrySelector = React.lazy(() => import('../CountrySelector/CountrySelector'));
 
 const AddressSet = () => {
     const {

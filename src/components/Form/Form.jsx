@@ -1,10 +1,14 @@
 import './form.css';
 import { useForm, FormProvider } from "react-hook-form";
-import { NameSet, JobSet, AddressSet} from '../index';
 import useEmployee from "../../hooks/useEmployee";
 import { useState } from "react";
 import { Popup } from "popup-lib-p14";
 import {Link} from "react-router-dom";
+import React from 'react';
+
+const NameSet = React.lazy(() => import('../NameSet/NameSet'));
+const JobSet = React.lazy(() => import('../JobSet/JobSet'));
+const AddressSet = React.lazy(() => import('../AddressSet/AddressSet'));
 
 const Form = () => {
     const methods = useForm({

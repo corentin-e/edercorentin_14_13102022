@@ -1,7 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Employees } from './pages';
-import { Layout } from './components';
 import { Provider } from "./hooks/createContext";
+import React from 'react';
+
+
+const Layout = React.lazy(() => import('./components/Layout/Layout'));
+const Home = React.lazy(() => import('./pages/Home/Home'));
+const Employees = React.lazy(() => import('./pages/Employees/Employees'));
+
 
 function App() {
     return (

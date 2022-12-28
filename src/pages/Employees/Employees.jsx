@@ -1,5 +1,7 @@
 import './employees.css';
-import { List } from '../../components';
+import React from 'react';
+
+const List = React.lazy(() => import('../../components/List/List'));
 
 const Employees = () => {
 
