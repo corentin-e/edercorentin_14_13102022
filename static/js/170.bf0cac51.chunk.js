@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkedercorentin_14_13102022=self.webpackChunkedercorentin_14_13102022||[]).push([[170],{64170:function(e,n,r){r.r(n),r.d(n,{default:function(){return i}});var t=r(50390),u=r(62559),c=t.lazy((function(){return Promise.all([r.e(24),r.e(426)]).then(r.bind(r,91094))})),i=function(){return(0,u.jsx)("div",{className:"home",children:(0,u.jsx)(c,{})})}}}]);
+//# sourceMappingURL=170.bf0cac51.chunk.js.map
